@@ -36,12 +36,12 @@ Linux
 3. Build and start the containers:
  - Linux
 ```bash
-     docker-compose up -d --build
+     docker-compose up
 ```
  - Windows
 ```.cmd
      Windows
-     docker compose up -d --build
+     docker compose up
 ```
 4. Access the challenge at: http://localhost:8082
 5. When finished, stop the containers:
