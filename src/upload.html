@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Echidnr! The noisiest image hosting site on the internet!
+</title>
+</head>
+
+<body>
+
+<!-- Banner -->
+<div>
+	<h1>Welcome to Echidnr! The noisiest image hosting site on the internet!</h1>
+	<img src="/images/echidnr_sml.jpeg" alt="An echidna, rushing to make noise somewhere">
+</div> 
+
+<!-- Upload form -->
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+	Please upload an image.<br>Files of type .jpg, jpeg, .png and .gif are accepted.<br>Files must be less than 2MB.<br>
+	Choose an image to upload:<br>
+	<input type="file" name="uploadFile" id="uploadFile"><br>
+	<input type="submit" value="Upload Image" name="Submit">
+</form>
+
+<!-- View images -->
+
+<div>
+	<a href=/images/>View uploaded images</a>
+</div>
+
+<!-- TODO -->
+<div>
+<!-- Figure out why some image types aren't displaying correctly. I made some changes in php-fpm config yesterday, maybe I messed something up...?-->
+</div>
+
+</body>
+</html>

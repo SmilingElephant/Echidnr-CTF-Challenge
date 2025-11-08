@@ -1,0 +1,48 @@
+services:
+  # PHP Service
+  php:
+    build:
+      #Build context is base dir
+      context: .              
+      dockerfile: docker/php/Dockerfile
+    container_name: php83_app 
+    volumes:
+      #Web content
+      - uploadedImages:/var/www/html/images
+    #   - ./src:/var/www/html   
+    networks:
+      #Connects the apps
+      - app-network          
+    #Restart container if needed
+    restart: unless-stopped
+
+  # Nginx Service
+  nginx:
+    build:
+      #Build context is base dir
+      context: . 
+      dockerfile: docker/nginx/Dockerfile
+    container_name: nginx_app
+    ports:
+      #HTTP on port 8082
+      - "8082:80"           
+    volumes:
+      #Web content
+      - uploadedImages:/var/www/html/images
+    #   - ./src:/var/www/html  
+    depends_on:
+      #Don't start nginx until php is up
+      - php
+    networks:
+      #Connects the apps
+      - app-network
+    #Restart container if needed
+    restart: unless-stopped
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  # Shared volume for images
+  uploadedImages:
