@@ -71,5 +71,5 @@ If you encounter issues, try rebuilding from scratch:
 ```
 
 ## Walkthrough
-A walkthrough for this challenge is available <a href ="https://drive.google.com/file/d/1DIXeShL6i3ff4HoOq2QKN9T16P-SzAV-/view?usp=drive_link">here</a>. I strongly recommend giving the challenge a try yourself, then if you get stuck, take a look to find the next step, then continue solving on your own. I guarantee you will have the most fun by solving as much of the challenge as you can on your own. 
+A walkthrough for this challenge is available <a href ="https://drive.google.com/file/d/1DIXeShL6i3ff4HoOq2QKN9T16P-SzAV-/view?usp=drive_link">here</a>. I strongly recommend giving the challenge a try yourself. If you get stuck, take a look to to get unstuck then continue working through the challenge. I guarantee you will have the most fun by solving as much as you can with your big sexy brain. 
 Good luck and have fun! :)
