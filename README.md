@@ -56,3 +56,7 @@ Some players have encountered issues with docker compose on recent installs - se
 ## Walkthrough
 A walkthrough for this challenge is available <a href ="https://drive.google.com/file/d/1DIXeShL6i3ff4HoOq2QKN9T16P-SzAV-/view?usp=drive_link">here</a>. I strongly recommend giving the challenge a try yourself. If you get stuck, take a look to to get unstuck then continue working through the challenge. I guarantee you will have the most fun by solving as much as you can with your big sexy brain. 
 Good luck and have fun! :)
+
+## LLM Declaration
+The echina_sml image on the front page was made using a Large Language Model.
+While models were consulted during the creation of this challenge, I declare it is my own work excepting the above.
