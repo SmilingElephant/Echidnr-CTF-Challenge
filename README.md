@@ -13,6 +13,7 @@ Welcome to the Echidnr CTF Challenge!
 
 This challenge includes a vulnerable image hosting service, can you find the exploit to obtain the flag?
 The service is hosted on TCP port 8082, no other ports are a part of this challenge.
+The challenge is entirely contained within the web page, editing the docker files is not a part of the challenge.
 
 ## Requirements
 Linux
@@ -34,41 +35,23 @@ Linux
 1. Extract the challenge files
 2. Navigate to the directory containing this file
 3. Build and start the containers:
- - Linux
 ```bash
-     docker-compose up
-```
- - Windows
-```.cmd
-     Windows
      docker compose up
 ```
 4. Access the challenge at: http://localhost:8082
 5. When finished, stop the containers:
- - Linux
 ```bash
-     docker-compose down
-```
- - Windows
-```.cmd
-     docker compose down
+     docker compose up
 ```
 
 ## Troubleshooting
 If you encounter issues, try rebuilding from scratch:
- - Linux
-```bash
-     docker-compose down -v
-     docker-compose build --no-cache
-     docker-compose up -d
-```
-
- - Windows
- ```.cmd
+ ```bash
      docker compose down -v
      docker compose build --no-cache
      docker compose up -d
 ```
+Some players have encountered issues with docker compose on recent installs - see <a href="https://www.reddit.com/r/docker/comments/1op6e1a/impossible_to_run_docker/">here</a>. Downgrading containerd.io as specified in that link should resolve any issues.
 
 ## Walkthrough
 A walkthrough for this challenge is available <a href ="https://drive.google.com/file/d/1DIXeShL6i3ff4HoOq2QKN9T16P-SzAV-/view?usp=drive_link">here</a>. I strongly recommend giving the challenge a try yourself. If you get stuck, take a look to to get unstuck then continue working through the challenge. I guarantee you will have the most fun by solving as much as you can with your big sexy brain. 
